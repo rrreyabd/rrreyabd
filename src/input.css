@@ -86,4 +86,24 @@
   span {
     @apply text-xs;
   }
+
+  .regexInput {
+    @apply relative w-full h-12 px-4 placeholder-transparent transition-all border rounded-xl outline-none text-slate-500;
+  }
+  
+  .regexInput:focus {
+    @apply border-blue-500 outline-none;
+  }
+  
+  .regexInput:invalid {
+    @apply border-pink-500 text-pink-500;
+  }
+  
+  .regexInput:focus:invalid {
+    @apply border-pink-500;
+  }
+  
+  .regexInput:disabled {
+    @apply cursor-not-allowed bg-slate-50 text-slate-400;
+  }
 }
